@@ -1,5 +1,6 @@
 {
   "name": "calcu",
+  "homepage": "https://1234Raj.github.io/Interest-Calculater",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "apexcharts": "^3.36.3",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.0",
     "react-dom": "^18.2.0",
@@ -20,6 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
