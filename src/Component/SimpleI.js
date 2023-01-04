@@ -34,14 +34,14 @@ function SimpleI() {
       if (num4 === 'Year') {
         var Add = parseInt(num1) * parseInt(num2) * parseInt(num3) / 100;
         setAdd(parseInt(Add));
-        const data = { name: "yearly", uv: Add.toFixed(2) }
+        const data = { name: "yearly", Interest: Add.toFixed(2) }
         setState([data, ...state])
         console.log("gr:", state)
       } else {
         var result = parseInt(num1) * parseInt(num2) * parseInt(num3) / 1200;
         setAdd(parseInt(result));
         console.log(typeof (result));
-        const Data = { name: "Months", uv: result.toFixed(2) }
+        const Data = { name: "Months", Interest: result.toFixed(2) }
         setState([Data, ...state])
         console.log("gr:", state)
       }
@@ -123,7 +123,7 @@ function SimpleI() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="uv" fill="#587fff" />
+              <Bar dataKey="Interest" barSize={30} fill="#587fff" />
             </BarChart>
           
         </div>

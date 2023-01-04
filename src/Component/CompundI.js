@@ -31,15 +31,15 @@ function CompoundI() {
       const total= compoundInterest.toFixed(2)-principal
       setAdd(total.toFixed(2));
       if(num4===1){
-      const Data = { name: "Yearly", uv:total.toFixed(2) }
+      const Data = { name: "Yearly", Interest:total.toFixed(2) }
         setState([Data, ...state])
         console.log("gr:", state)
       }else if(num4===2){
-        const Data = { name: "Semiannualy", uv:total.toFixed(2) }
+        const Data = { name: "Semiannualy", Interest:total.toFixed(2) }
         setState([Data, ...state])
         console.log("gr:", state)
       }else if(num4===4){
-        const Data = { name: "Quaterly", uv:total.toFixed(2) }
+        const Data = { name: "Quaterly", Interest:total.toFixed(2) }
         setState([Data, ...state])
         console.log("gr:", state)
       }else{
@@ -125,7 +125,7 @@ function CompoundI() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="uv" fill="#8884d8" />
+              <Bar dataKey="Interest" barSize={30} fill="#587fff" />
             </BarChart>
           </div>
         </div>
